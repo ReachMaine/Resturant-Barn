@@ -1,0 +1,95 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: Restaurant Barn
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome
+Author: Tim Suellentrop
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body a[href]:after {
+    content: ""; } }
+/* =Theme customization starts here */
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+#masthead #logo a img {
+  max-height: 150px; }
+
+#masthead .right-links .catalog-mode-header {
+  height: inherit; }
+  #masthead .right-links .catalog-mode-header .social-icons .icon.icon_email {
+    background-color: #a31500;
+    border-color: #a31500; }
+  #masthead .right-links .catalog-mode-header .social-icons .icon.icon_facebook {
+    background-color: #3A589D;
+    border-color: #3a589d; }
+
+#masthead .right-links .catalog-mode-header img {
+  height: 100%; }
+
+/* #masthead  #site-navigation > li:after {  // dont like this.
+	content: "\2022";
+	padding-left: 5px;
+}
+#masthead  #site-navigation > li:last-child:after  {
+	content: "";
+} */
+#masthead #site-navigation > li {
+  padding-right: 10px;
+  margin-left: 10px; }
+
+#masthead #site-navigation > li:not(:last-child) {
+  border-right: 1px solid #a31500; }
+
+#masthead #site-navigation > li:first-child {
+  margin-left: 0px; }
+
+#masthead #site-navigation > li:last-child {
+  padding-right: 0px; }
+
+#masthead .header-container {
+  padding-right: 0px; }
+
+#masthead .left-links > ul {
+  padding-top: 0px; }
+
+.zimage-box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* ration 1:1 */ }
+
+.zimage-box {
+  position: relative;
+  width: 100%;
+  background-color: transparent; }
+
+.zimage-box .front-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.column-slider .product-small {
+  padding-left: 10px !important; }
+
+.restbar-menu {
+  background-color: #a31500; }
+  .restbar-menu dl.level1 dt.parent .inner,
+  .restbar-menu dl.level1 dt.parent.opened .inner {
+    background-image: url("./images/arrow.png") !important; }
+  .restbar-menu dl.level2 {
+    background-color: #680d00; }

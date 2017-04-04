@@ -1,0 +1,115 @@
+/*
+Theme Name: Restaurant Barn
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome
+Author: Tim Suellentrop
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 1.8
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+@import "partials/print";
+
+ 
+/* =Theme customization starts here */
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+#masthead #logo {
+	a img {
+		max-height: 150px;
+	}
+}
+#masthead .right-links .catalog-mode-header {
+	height: inherit; // make social links not float to top of left-links.
+	.social-icons { // trying to make email & facebook icons stand out more.
+		.icon.icon_email {
+			background-color: $restb_red; 
+  			border-color: $restb_red;
+		}
+		.icon.icon_facebook {
+			background-color: #3A589D; // facebook blue;d
+  			border-color: #3A589D
+		}
+	}
+}
+#masthead .right-links .catalog-mode-header img {
+	height: 100%;
+}
+/* #masthead  #site-navigation > li:after {  // dont like this.
+	content: "\2022";
+	padding-left: 5px;
+}
+#masthead  #site-navigation > li:last-child:after  {
+	content: "";
+} */
+#masthead  #site-navigation > li {
+	padding-right: 10px;
+	margin-left: 10px;
+}
+#masthead  #site-navigation > li:not(:last-child) { // spacing between top level nav
+	border-right: 1px solid $restb_red;
+}
+#masthead  #site-navigation > li:first-child {
+	margin-left: 0px;
+}
+#masthead  #site-navigation > li:last-child {
+	padding-right: 0px;
+}
+#masthead .header-container {
+	padding-right: 0px;
+}
+#masthead .left-links > ul {
+	padding-top: 0px;
+}
+// 
+.zimage-box:before {
+	content:"";
+	display:block;
+	padding-top: 100%; /* ration 1:1 */
+}
+.zimage-box {
+	position: relative;
+	width: 100%;
+	//background-color: white;
+	background-color: transparent;
+}
+.zimage-box .front-image {
+	position: absolute;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+.column-slider .product-small {
+	padding-left: 10px!important;
+}
+// accordion menu styling
+// $accordMenuBkg: #A31500;
+//$accordMenuLvl2: #680D00;
+.restbar-menu {
+	background-color: $accordMenuBkg;
+	// padding for levels availabe in backend.  no need to override here.
+	// font sizes also available in backend.
+	dl.level1 dt.level1.active {
+		//background-color: $bhm-menu-topactive;
+	}
+	dl.level1 dt.parent .inner,
+	dl.level1 dt.parent.opened .inner {
+		background-image: url("./images/arrow.png")!important;
+	}
+	dl.level2 {
+		background-color: $accordMenuLvl2;
+	}
+}
+
+

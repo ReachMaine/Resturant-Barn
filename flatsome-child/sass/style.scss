@@ -7,12 +7,13 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 1.8
 */
- 
+
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
 @import "partials/print";
+@import "partials/splash-page";
 
- 
+
 /* =Theme customization starts here */
 .from_the_blog_comments { // hide comments on blog shortcode 
 	display: none;
@@ -33,7 +34,7 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	height: inherit; // make social links not float to top of left-links.
 	.social-icons { // trying to make email & facebook icons stand out more.
 		.icon.icon_email {
-			background-color: $restb_red; 
+			background-color: $restb_red;
   			border-color: $restb_red;
 		}
 		.icon.icon_facebook {
@@ -71,7 +72,7 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 #masthead .left-links > ul {
 	padding-top: 0px;
 }
-// 
+//
 .zimage-box:before {
 	content:"";
 	display:block;
@@ -111,5 +112,3 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 		background-color: $accordMenuLvl2;
 	}
 }
-
-

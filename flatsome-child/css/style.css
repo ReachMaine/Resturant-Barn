@@ -19,6 +19,13 @@ Version: 1.8
 .page-id-1239 .ux_banner {
   height: 100vh !important; }
 
+.homepage-icons .row.container {
+  margin-bottom: 0px !important; }
+
+@media only screen and (min-width: 767px) {
+  .homepage-icons img {
+    height: 130px;
+    width: auto; } }
 /* =Theme customization starts here */
 .from_the_blog_comments {
   display: none;
